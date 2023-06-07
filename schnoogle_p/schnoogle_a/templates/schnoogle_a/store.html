@@ -1,0 +1,269 @@
+{% extends 'schnoogle_a/main.html' %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" />
+
+{% block content %}
+
+<section id="hero" style="background-image: url('{% static 'images/cloth.png' %}')" ;>
+  <h1 style="font-size: 55px;">Big store for our little ones</h1>
+  <p style="font-size: large;">Save more with coupons upto 70% off!</p>
+  <a href="{% url 'store' %}"><button>Shop Now!</button></a>
+
+</section>
+
+<section class="second-banner" style="background-image: url('{% static 'images/banner8.jpg' %}')" ;>
+  <h2 style="font-size: larger; color: #8e9aaf;">END OF SEASON</h2>
+  <h2 style="color: #012a4a; padding: 10px 0;">BIG SALE ON ALL ITEMS</h2>
+  <button onclick="window.location='{% url 'store' %}' " class="normal">Explore More</button>
+</section>
+
+<!-- <h1>Best Selling Products</h1> -->
+<section id="product1" class="section-p1">
+
+  <div class="pro-container">
+    <h3>Baby Girl</h3>
+    <div class="text-align">
+      <div class="pro">
+        <img src="{% static 'images/TG11.jpg' %}" alt="">
+        <div class="des">
+          <h5>Bust Cami Top & Blouse & Shorts</h5>
+          <h4>&#8377;899</h4>
+        </div>
+        <button class="home" ><a style="color: #495057; text-decoration: none;" class="home" href="{% url 'tshirtsB' %}">
+          Explore More
+          <span style="line-height: 7px;" class="material-symbols-outlined">
+            arrow_right_alt
+            </span>
+        </a></button>
+      </div>
+
+      <div class="pro">
+        <img src="{% static 'images/sg10.jpg' %}" alt="">
+        <div style="padding-top: 65px;" class="des">
+          <h5>Bowtie ballerina shoes</h5>
+          <h4>&#8377;699</h4>
+        </div>
+        <button class="home" ><a style="color: #495057; text-decoration: none;" class="home" href="{% url 'tshirtsB' %}">
+          Explore More
+          <span style="line-height: 7px;" class="material-symbols-outlined">
+            arrow_right_alt
+            </span>
+        </a></button>
+      </div>
+
+      <div class="pro">
+        <img src="{% static 'images/wg4.jpg' %}" alt="">
+        <div class="des">
+          <h5>Garara Set</h5>
+          <h4>&#8377;1999</h4>
+        </div>
+        <button class="home" ><a style="color: #495057; text-decoration: none;" class="home" href="{% url 'weddingwearG' %}">
+          Explore More
+          <span style="line-height: 7px;" class="material-symbols-outlined">
+            arrow_right_alt
+            </span>
+        </a></button>
+      </div>
+    </div>
+
+    <h3>Baby Boy</h3>
+    <div class="text-align" style="background-color: #faf9f9;">
+      <div class="pro">
+        <img src="{% static 'images/winterset4.jpg' %}" alt="">
+        <div style="padding-top: 45px;" class="des">
+          <h5>Flannel Animal Jumpsuit</h5>
+          <h4>&#8377;999</h4>
+        </div>
+        <button class="home" ><a style="color: #495057; text-decoration: none;" class="home" href="{% url 'winterB' %}">
+          Explore More
+          <span style="line-height: 7px;" class="material-symbols-outlined">
+            arrow_right_alt
+            </span>
+        </a></button>
+      </div>
+
+      <div class="pro">
+        <img src="{% static 'images/wb2.jpg' %}" alt="">
+        <div class="des">
+          <h5>Toddler grey suit</h5>
+          <h4>&#8377;1900</h4>
+        </div>
+        <button class="home" ><a style="color: #495057; text-decoration: none;" class="home" href="{% url 'partyB' %}">
+          Explore More
+          <span style="line-height: 7px;" class="material-symbols-outlined">
+            arrow_right_alt
+            </span>
+        </a></button>
+      </div>
+
+      <div class="pro">
+        <img src="{% static 'images/crocsB3.jpg' %}" alt="">
+        <div class="des">
+          <h5>Cow print crocs</h5>
+          <h4>&#8377;1299</h4>
+        </div>
+        <button class="home" ><a style="color: #495057; text-decoration: none;" class="home" href="{% url 'footwearB' %}">
+          Explore More
+          <span style="line-height: 7px;" class="material-symbols-outlined">
+            arrow_right_alt
+            </span>
+        </a></button>
+      </div>
+    </div>
+
+
+    <h3>Plush Toys</h3>
+    <div class="text-align">
+      <div class="pro">
+        <img src="{% static 'images/bs13.jpg' %}" alt="">
+        <div style="padding-top: 35px;" class="des">
+          <h5>Rare bears soft plushy</h5>
+          <h4>&#8377;799</h4>
+        </div>
+        <button class="home" ><a style="color: #495057; text-decoration: none;" class="home" href="{% url 'toys' %}">
+          Explore More
+          <span style="line-height: 7px;" class="material-symbols-outlined">
+            arrow_right_alt
+            </span>
+        </a></button>
+      </div>
+
+      <div class="pro">
+        <img src="{% static 'images/bs14.jpg' %}" alt="">
+        <div class="des">
+          <h5>Japanese sushi rice cushion plushy</h5>
+          <h4>&#8377;1399</h4>
+        </div>
+        <button class="home" ><a style="color: #495057; text-decoration: none;" class="home" href="{% url 'toys' %}">
+          Explore More
+          <span style="line-height: 7px;" class="material-symbols-outlined">
+            arrow_right_alt
+            </span>
+        </a></button>
+      </div>
+
+      <div class="pro">
+        <img src="{% static 'images/bs18.jpg' %}" alt="">
+        <div class="des">
+          <h5>Unicorn soft plushy</h5>
+          <h4>&#8377;820</h4>
+        </div>
+        <button class="home" ><a style="color: #495057; text-decoration: none;" class="home" href="{% url 'toys' %}">
+          Explore More
+          <span style="line-height: 7px;" class="material-symbols-outlined">
+            arrow_right_alt
+            </span>
+        </a></button>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- banner -->
+<section id="banner1" class="section-m1" style="background-image: url('{% static 'images/banner17.jpg' %}')" ;>
+  <h4>Mom of all sales</h4>
+  <h2>GRAB YOUR <span>FAVOURTIES</span> NOW!</h2>
+<a href="{% url 'store' %}"> <button>Explore More</button></a> 
+</section>
+
+<!-- sales banner -->
+<section id="product1" class="section-1">
+
+  <!-- 50% off  -->
+  
+    <div class="text-align" style="background-color: #f6fff8; padding: 30px 30px;">
+      <div class="pro">
+        <a href="boys.html"> <img src="{% static 'images/sale2.jpg' %}" alt=""></a>
+        <div class="des" style="text-align: center;">
+          <h5>Sets and suits</h5>
+          <h4>Min 50% off</h4>
+        </div>
+        <button class="home" ><a style="color: #495057; text-decoration: none;" class="home" href="{% url 'partyB' %}">
+          Explore More
+          <span style="line-height: 7px;" class="material-symbols-outlined">
+            arrow_right_alt
+            </span>
+        </a></button>
+      </div>
+
+      <div class="pro">
+        <a href=""> <img src="{% static 'images/sg2.jpg' %}" alt=""></a>
+        <div style="padding-top: 35px; text-align: center;" class="des" style="text-align: center;">
+          <h5>Footwear</h5>
+          <h4>Upto 50% off</h4>
+        </div>
+        <button class="home" ><a style="color: #495057; text-decoration: none;" class="home" href="{% url 'footwearG' %}">
+          Explore More
+          <span style="line-height: 7px;" class="material-symbols-outlined">
+            arrow_right_alt
+            </span>
+        </a></button>
+      </div>
+
+
+      <div class="pro">
+        <a href=""> <img src="{% static 'images/ib.jpg' %}" alt=""></a>
+        <div class="des" style="text-align: center;">
+          <h5>Partywear</h5>
+          <h4>Upto 70% off</h4>
+        </div>
+        <button class="home" ><a style="color: #495057; text-decoration: none;" class="home" href="{% url 'partyB' %}">
+          Explore More
+          <span style="line-height: 7px;" class="material-symbols-outlined">
+            arrow_right_alt
+            </span>
+        </a></button>
+      </div>
+    </div>
+  
+</section>
+
+<!-- newsletter -->
+<section id="news" class="section-p1" style="background-image: url('{% static 'images/banner28.jpeg' %}')">
+  <div class="newstext">
+    <h4>Sign Up For Newsletters</h4>
+    <p>Get E-mail updates about our latest shop and <span> special offers.</span></p>
+  </div>
+  <form method="post" action="{% url 'newsletter_signup' %}" class="form">
+    {% csrf_token %}
+    <input class="letter" type="email" name="email" placeholder="Your email address">
+    <button class="normal1" type="submit">Sign Up</button>
+  </form>
+</section>
+
+
+<!-- features -->
+<section id="feature" class="section-p1 section-m1">
+  <div class="fe-box">
+    <img src="{% static 'images/easy-returns.jpg' %}" alt="">
+  </div>
+
+  <div class="fe-box">
+    <img src="{% static 'images/chat.png' %}" alt="">
+  </div>
+
+  <div class="fe-box">
+    <img src="{% static 'images/fast-delivery.jpg' %}" alt="">
+  </div>
+
+  <div class="fe-box">
+    <img src="{% static 'images/money-back.png' %}" alt="">
+  </div>
+
+  <div class="fe-box">
+    <img src="{% static 'images/worldwide-delivery.jpg' %}" alt="">
+  </div>
+
+</section>
+
+<!--footer -->
+
+
+
+<p style="padding-left: 50%; background-color: #eaf4f4;">&copy; 2022, Schnoogle & Co.</p>
+
+
+
+
+{% endblock content %}

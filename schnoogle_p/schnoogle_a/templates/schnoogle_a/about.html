@@ -1,0 +1,19 @@
+{% extends 'schnoogle_a/main.html' %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" />
+
+{% block content %}
+    <div class="container my-5 pp">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <img style="height: 500px;" src="{% static 'images/a1.jpg' %}" alt="About Us Image" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-6">
+                <h2>About Us</h2>
+                <p>Schnoogle is a leading e-commerce platform that specializes in baby products. We offer a wide range of products including baby clothes, toys, diapering material, and more. Our aim is to provide parents with high-quality, safe, and affordable products for their little ones.</p>
+                <p>Based in Mumbai, we are committed to serving our customers with the best possible experience. We understand the challenges that come with parenting, and our goal is to make it easier for parents to find everything they need in one place.</p>
+                <p>At Schnoogle, we believe in creating a community of parents who can support each other through their parenting journey. Our team is dedicated to providing personalized support to each of our customers, and we are always here to answer any questions you may have.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

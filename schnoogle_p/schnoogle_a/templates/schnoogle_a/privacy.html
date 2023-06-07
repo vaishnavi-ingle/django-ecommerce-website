@@ -1,0 +1,54 @@
+{% extends 'schnoogle_a/main.html' %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" />
+
+{% block content %}
+    <div class="container my-5 pp">
+        <h1 class="text-center mb-4">Privacy Policy</h1>
+        <p class="text-muted text-center">Effective date: {{ current_date }}</p>
+
+        <div class="row mt-5">
+            <div class="col-md-8 mx-auto">
+                <p class="lead">Our company (the "Company") is committed to protecting the privacy of its users. This Privacy Policy ("Policy") is designed to help you understand what information we collect, how we use it, and what choices you have regarding your personal information.</p>
+
+                <h2 class="mt-5 mb-4">What Information We Collect</h2>
+                <p>We may collect the following types of information:</p>
+                <ul>
+                    <li>Personal information such as your name, email address, and phone number;</li>
+                    <li>Information about your device and how you use our website or mobile app;</li>
+                    <li>Information about your location;</li>
+                    <li>Other information you provide to us directly.</li>
+                </ul>
+
+                <h2 class="mt-5 mb-4">How We Use Your Information</h2>
+                <p>We may use your information for the following purposes:</p>
+                <ul>
+                    <li>To provide and maintain our services;</li>
+                    <li>To personalize your experience with our website or mobile app;</li>
+                    <li>To communicate with you about your account or our services;</li>
+                    <li>To improve our website or mobile app;</li>
+                    <li>To comply with legal obligations.</li>
+                </ul>
+
+                <h2 class="mt-5 mb-4">Information Sharing and Disclosure</h2>
+                <p>We may share your information in the following circumstances:</p>
+                <ul>
+                    <li>With service providers who assist us in providing our services;</li>
+                    <li>With our affiliates or subsidiaries;</li>
+                    <li>In response to legal process or a request from a government agency;</li>
+                    <li>If we believe disclosure is necessary to protect our rights or property or the rights or property of others.</li>
+                </ul>
+
+                <h2 class="mt-5 mb-4">Your Choices</h2>
+                <p>You may choose not to provide us with certain information, but this may limit your ability to use some of our services.</p>
+
+                <h2 class="mt-5 mb-4">Changes to This Policy</h2>
+                <p>We may update this Policy from time to time. We will notify you of any changes by posting the new Policy on this page.</p>
+
+                <h2 class="mt-5 mb-4">Contact Us</h2>
+                <p>If you have any questions about this Policy, please contact us <a href="{% url 'contact' %}">here</a>.</p>
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}
